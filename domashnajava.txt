@@ -1,0 +1,55 @@
+NovKlas
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class NovKlas {
+    public static void main(String[] args) {
+        Chovek chovek1 = new Chovek("Ronaldo", 35);
+        Chovek chovek2 = new Chovek("Chris Brown", 35);
+
+
+        Scanner sc = new Scanner(System.in);
+        chovek.removeChovek(chovek2);
+    }
+}
+
+
+
+Chovek
+
+
+public class Chovek {
+    private String name;
+    private int age;
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public Chovek(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+    public void removeChovek(Chovek chovek)
+    {
+        chovek.remove(chovek);
+    }
+    @Override
+    public String toString() {
+        return "Chovek e " +
+                "ime e " + name+
+                ", vuzrast e" + age;
+    }
+}
